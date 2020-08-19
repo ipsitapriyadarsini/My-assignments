@@ -1,0 +1,60 @@
+.main {
+    height: 200px;
+    width: 100%;
+    display: block;
+    /* background-color: blueviolet; */
+}
+
+.container {
+    /* background-color: cornflowerblue; */
+}
+
+.spl-1 {
+    height: 200px;
+    background-color: rosybrown;
+}
+
+.spl-2 {
+    height: 200px;
+    background-color: green;
+}
+
+.spl-3 {
+    height: 200px;
+    background-color: cyan;
+}
+
+.spl1-1 {
+    height: 200px;
+    background-color: rgb(94, 216, 121);
+}
+
+.spl1-2 {
+    height: 200px;
+    background-color: rgb(182, 61, 91);
+}
+
+.spl2-1 {
+    height: 200px;
+    background-color: rgb(243, 22, 22);
+}
+
+.spl2-2 {
+    height: 200px;
+    background-color: hotpink;
+}
+
+.spl2-3 {
+    height: 200px;
+    background-color: rgb(197, 86, 13);
+}
+
+.spl3-1 {
+    height: 200px;
+    background-color: rgb(45, 148, 97);
+}
+
+.spl3-2 {
+    height: 200px;
+    background-color: rgb(31, 13, 197);
+}

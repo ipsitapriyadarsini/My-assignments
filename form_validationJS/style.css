@@ -1,0 +1,15 @@
+.container {
+    margin: 30px;
+    border: 5px #9B59B6 solid;
+    width: 20%s;
+}
+
+.error-span {
+    color: #e00d0d;
+    font-size: 12px;
+}
+
+.success {
+    color: rgb(48, 165, 25);
+    font-size: 12px;
+}

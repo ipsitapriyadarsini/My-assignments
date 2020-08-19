@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-2">
+                <h5 id="head"> &nbsp &nbsp &nbsp &nbsp &nbsp STUDENT</h5>
+                <div class="col-md-8">
+                    <form action="" method="" id="form_id" name="form1">
+                        <div class="form-group">
+                            <label for="name">Student name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter Name" onkeyUp="nameValidate()">
+                            <span id="nameError" class="error-span"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile_no">Mobile no:</label>
+                            <input type="text" class="form-control" id="mobile" placeholder="Enter mobile number" onkeyup="phNoValidate()" />
+                            <span id="mobError" class="error-span"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-check-label" value="">Gender:
+                            </label>
+                            <input class=gender type="radio" name="gender" value="male">Male
+                            <input class=gender type="radio" name="gender" value="female">Female
+                            <input class=gender type="radio" name="gender" value="others">Others<br>
+                            <span id="genError" class="error-span"></span>
+                        </div><br>
+                        <div class="form-group">
+                            <lebel for="validationTextarea">Address:</lebel>
+                            <textarea class="form-control" id="validationTextarea" type="text" placeholder="Enter the address details" required onkeyup="AddressValidate()"></textarea>
+                            <span id="addError" class="error-span"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-group-label" name="checkbox" id="checkbox" value="">Class:
+                                
+                        <select id="ddlcheck" name="select">
+                
+                                <option value="">select</option>
+                                <option value="1st" id="1st">1st</option>
+                                <option value="2nd" id="2nd">2nd</option>
+                                <option value="3rd" id="3rd">3rd</option>
+                                <option value="4th" id="4th">4th</option>
+                                <option value="5th" id="5th">5th</option>
+                                <option value="6th" id="6th">6th</option>
+                                <option value="7th" id="7th">7th</option>
+                                <option value="8th" id="8th">8th</option>
+                                <option value="9th" id="9th">9th</option>
+                                <option value="10th" id="10th">10th</option>
+                                </select>
+                                <span id="clsError" class="error-span"></span>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                        <label for="subject" >Subjects:</label>
+                            <input type="checkbox" name="subject" value="">Math
+                            <input type="checkbox" name="subject" value="">Science
+                            <input type="checkbox" name="subject" value="">English
+                            <input type="checkbox" name="subject" value="">History
+                            <input type="checkbox" name="subject" value="">Geography
+                            <input type="checkbox" name="subject" value="">Hindi
+                            <span id="chkError"></span>
+                        </div>
+                        <br>
+                        <input type="button" name="submit" id="btn_id" value="ADD" onclick="formValidation()">
+                        <span id="validationFailed"></span>
+                    </form><br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
